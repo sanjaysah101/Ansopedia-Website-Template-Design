@@ -1,1 +1,0 @@
-# Ansopedia Website Template Design 
