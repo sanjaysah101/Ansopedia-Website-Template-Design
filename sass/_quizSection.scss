@@ -1,0 +1,185 @@
+@import "utils/colors";
+@import "utils/utils";
+
+
+.quizBody {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-gap: 2rem;
+    margin: 2rem 0;
+    background-color: $bg-color-section;
+
+    .leftSideBar {
+        align-self: start;
+        background-color: $bg-color-side-nav;
+        position: sticky;
+        top: 1rem;
+        max-width: 200px;
+        border-right: 3px solid $color-sidebar-text;
+
+        .sidebarContent {
+            margin: 3rem 2rem;
+
+            ul {
+                .sidemenu {
+                    list-style-type: none;
+                    // background-color: yellow;
+                    border-bottom: 2px solid $color-sidebar-text;
+
+                    .sideMenuTitle {
+                        display: flex;
+                        padding: 10px 5px;
+                        // background-color: red;
+                        justify-content: space-between;
+                    }
+
+                    a {
+                        text-decoration: none;
+                        color: $color-sidebar-text;
+
+                        &:hover {
+                            color: $color-primary;
+                        }
+                    }
+
+                    .sub_menu {
+                        // color: #69187D;
+                        // text-decoration: none;
+                        // display: none;
+                        margin-left: 10px;
+
+                        li {
+                            list-style-type: none;
+                            // background-color: red;
+                            padding: 5px 0;
+                            border: none;
+
+                            &::before {
+                                content: "👉 ";
+                                color: $color-primary;
+
+                            }
+                        }
+
+                    }
+
+                    .iconArr {
+                        font-size: 12px;
+                        float: right;
+                        transition: transform 0.4s;
+
+                        .navactive {
+                            transform: translateY(-20%) rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .quizContaintBody {
+        margin: 3rem 0;
+
+        .quiz_heading {
+            position: sticky;
+            top: 1rem;
+            // background-color: $bg-color-quiz-heading;
+            background-color: $bg-color-hero-quiz;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            padding: 10px;
+            font-weight: bold;
+            display: flex;
+
+            .quiz-nav-icons {
+                color: $color-black;
+                margin-right: 3rem;
+                display: none;
+            }
+        }
+
+        .quizQuestion {
+            // margin: 20px 0;
+            // margin-bottom: 20px;
+            padding: 10px;
+            background-color: $color-white;
+
+            .question-title {
+                color: $color-black;
+                font-size: 2rem;
+                font-weight: 400;
+
+            }
+
+            ol {
+                margin-left: 3rem;
+
+                li {
+                    margin: 1rem;
+                    padding-left: 1rem;
+                }
+            }
+
+            .quiz-links {
+                display: flex;
+                justify-content: left;
+                margin-top: 2rem;
+                flex-wrap: wrap;
+                background-color: $bg-color-side-nav;
+                padding: 1rem;
+
+                span {
+                    color: $color-sidebar-text;
+                    // padding: 0 15px;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: $color-primary;
+                    }
+
+                    &:not(:last-child)::after {
+                        // border-right: 4px solid $color-primary;
+                        color: $color-primary-seperator;
+                        content: "\00a0 \00a0 \00a0 | \00a0 \00a0 \00a0";
+                        font-weight: 900;
+                        font-size: 2rem;
+                    }
+
+                }
+
+                // a::after {
+                //     content: "\00a0 \00a0 \00a0 | \00a0 \00a0 \00a0";
+                //     color: $color-primary;
+                // }
+            }
+
+
+            .desc {
+                margin-top: 20px;
+                border: 2px solid black;
+                padding: 20px;
+                display: none;
+                color: black;
+            }
+        }
+
+
+    }
+
+    .rightSideBar {
+        align-self: start;
+        background-color: $bg-color-side-nav;
+        position: sticky;
+        top: 1rem;
+        // width: 100%;
+
+        .advertisementSidebar {
+
+            padding: 2rem 1rem;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

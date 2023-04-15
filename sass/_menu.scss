@@ -1,0 +1,28 @@
+.main-menu,
+.footer-menu {
+    display: flex;
+    overflow: hidden;
+
+    li {
+        list-style-type: none;
+        color: #eee;
+
+        a {
+            color: $color-main-menu;
+            text-decoration: none;
+            transition: .3s ease;
+
+            &:hover {
+                color: $color-primary;
+                text-decoration: underline;
+                transform: translateY(-2px);
+            }
+        }
+
+        &:not(:last-child)::after {
+            content: "\00a0 \00a0 \00a0 | \00a0 \00a0 \00a0";
+            color: $color-primary;
+        }
+
+    }
+}

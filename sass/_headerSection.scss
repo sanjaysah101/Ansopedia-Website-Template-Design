@@ -1,0 +1,83 @@
+@import "utils/colors";
+@import "utils/utils";
+
+.hero {
+    background-color: $bg-color-hero;
+    max-height: fit-content;
+    // height: 520px;
+    border-end-end-radius: 16rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.20);
+
+    .hero-contain {
+        height: 100%;
+        display: flex;
+        // flex-direction: column;
+        padding: 5rem 0 2rem 0;
+        // background-color: red;
+
+        .left {
+            // @include flex(center, center);
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 60%;
+
+            h1 {
+                font-size: 4.8rem;
+                font-weight: 700;
+                color: #2B2B2B;
+
+                img {
+                    width: 3rem;
+                    margin-left: 1rem;
+                }
+            }
+
+            h3 {
+                margin-top: 2rem;
+                font-weight: 500;
+                font-size: 3.0rem;
+                color: #373737;
+            }
+
+            .links {
+                margin-top: auto;
+                display: flex;
+                // background-color: red;
+                align-items: center;
+                margin: 4rem 0;
+
+                button {
+                    width: 26.7rem;
+                    height: 4.8rem;
+                    background: $color-primary;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    border-radius: 30px;
+                    margin-left: 3vw;
+                }
+
+                a {
+                    font-weight: 700;
+                    font-size: 2.2rem;
+                    color: $color-primary;
+                    text-decoration: none;
+                    margin-left: 3vw;
+                }
+            }
+        }
+
+        .right {
+            .img {
+                @include flex(center, center);
+                img{
+                    max-height: 50rem;
+                }
+            }
+        }
+    }
+}
+.hero-quiz{
+    background-color: $bg-color-hero-quiz;
+    
+
+}

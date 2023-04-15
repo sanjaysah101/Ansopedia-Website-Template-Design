@@ -1,0 +1,73 @@
+.categoryList {
+    margin-top: 2rem;
+    background-color: $bg-color-section;
+    padding: 4rem 0;
+
+    .container {
+        width: 80vw;
+
+        .categoryBoxWrapper {
+            display: grid;
+            grid-template-columns: repeat(4, 240px);
+            justify-content: center;
+            gap: 2rem;
+
+            .col{
+
+                margin: 2rem;
+                color: $color-title;
+                .categoryBox {
+                    width: 100%;
+                    background-color: $color-primary;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    justify-content: space-between;
+                    height: 200px;
+                    border-radius: 15px;
+                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    
+                    .icon {
+                        height: 65%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 45px;
+                        img{
+                            width: 80px;
+                            height: 80px;
+                        }
+                    }
+    
+                    .title {
+                        height: 35%;
+                        background-color: #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0 0 15px 15px;
+                        font-weight: 700;
+                        padding: 0 3rem;
+                        font-size: 1.6rem;
+                    }
+    
+                }
+            }
+        }
+
+        .CategoryHeading {
+            width: 100%;
+            margin: 0 auto;
+            margin: 1rem 0;
+            background-color: $color-primary;
+            text-align: center;
+            border-radius: 15px;
+            font-weight: 700;
+            padding: 1rem;
+            font-size: 16px;
+        }
+
+
+
+    }
+}

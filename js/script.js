@@ -30,3 +30,22 @@ searchbar.forEach(search =>{
         console.log(search.value);
     })
 })
+
+
+// Quiz
+
+const hamburgerQuizHeader = document.querySelector("#hamburgerQuizHeader");
+const crossQuizHeader = document.querySelector("#crossQuizHeader");
+// const navQuizIcons = document.querySelectorAll(".quiz-nav-icons")
+const navQuizIcons = document.querySelectorAll(".quiz-nav-icons");
+const quizBody = document.querySelector(".quizBody");
+const quizContentLeftSidebar = document.querySelector("#quizContentLeftSidebar")
+crossQuizHeader.classList.add("hide");
+navQuizIcons.forEach(navIcon => {
+    navIcon.addEventListener("click", () => {
+        hamburgerQuizHeader.classList.toggle("hide");
+        crossQuizHeader.classList.toggle("hide");
+        // quizContentLeftSidebar.classList.toggle("hide");
+        quizBody.classList.toggle("mobile-quiz-Body");
+    })
+})

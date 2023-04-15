@@ -1,0 +1,488 @@
+@media screen and (max-width: 1200px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .container {
+        width: 95%;
+        // padding: 0 1rem;
+    }
+
+
+    .nav {
+        .logo {
+            margin: 0;
+        }
+    }
+
+    .float-search {
+        display: flex;
+        position: relative;
+        // flex: 1;
+        // width: 90vw;
+        // background-color: orange;
+        // background-color: $color-nav;
+        // margin: 0 auto;
+        // padding: 0 8rem 0 4rem;
+
+
+
+        .input-search {
+            // background-color: red;
+            // background-color: transparent;
+            // position: absolute;
+            // right: 0;
+            // max-width: 100%;
+            // min-width: 30%;
+            width: 100%;
+            // margin: 0 3rem;
+            display: flex;
+
+            input[type="text"] {
+                background-color: transparent;
+                color: $color-main-menu;
+                height: 4rem;
+                display: block;
+                width: 100%;
+                font-size: 2rem;
+                letter-spacing: 1px;
+                padding-left: 1rem;
+                margin: 1rem auto;
+                border: 0;
+                border-right: 0;
+                border-bottom: 1px solid $color-white;
+            }
+
+            .search-icon {
+                // color: $color-white;
+                // z-index: 99;
+                background-color: $color-white;
+                height: 4rem;
+                display: block;
+                // max-width: 30rem;
+                font-size: 2rem;
+                font-weight: 300;
+                padding: 1rem;
+                // padding-left: 3rem;
+                // margin: 1rem auto;
+                // width: 100%;
+                border: 1px solid $color-white;
+                // border-left: 0;
+                border-radius: 0 30px 30px 0;
+                border-radius: 50px;
+                transform: translateX(-25px);
+                align-self: center;
+                display: flex;
+                cursor: pointer;
+
+                &:hover {
+                    color: $color-white;
+                    background-color: $color-primary;
+                    border: 1px solid $color-primary;
+                    // text-decoration: underline;
+                    // transform: translate(-2px, -3px);
+                }
+            }
+        }
+
+    }
+
+    .hero {
+        .hero-contain {
+            width: 90%;
+        }
+    }
+
+    // CategoryList
+    .categoryList {
+        .container {
+            .categoryBoxWrapper {
+                grid-template-columns: repeat(3, 33%);
+                gap: .5rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    html {
+        font-size: 50%;
+    }
+
+    .nav-icons {
+        color: $color-white;
+    }
+
+    .nav {
+        .right-nav {
+            .nav-search {
+                display: none;
+            }
+
+            .nav-right-icons {
+                display: flex;
+
+                .mobile-search-icon,
+                .mobileSignInBtn {
+
+                    display: block;
+                    cursor: pointer;
+                    color: $color-white;
+                    margin: 0 1rem;
+                }
+
+                // .mobile-search-icon:hover,
+                // .mobileSignInBtn:hover {
+                //     transform: translateY(-2px);
+                //     color: $color-primary;
+                // }
+                .auth {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .hero {
+        .hero-contain {
+            .left {
+                max-width: 55%;
+
+                h1 {
+                    font-size: 4.4rem;
+                }
+
+                h3 {
+                    font-size: 2.8rem;
+                }
+
+                .links {
+                    button {
+                        width: 20rem;
+                    }
+
+                    a {
+                        font-size: 1.8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // CategoryList 
+    .categoryList {
+        .container {
+            width: 90vw;
+
+            .categoryBoxWrapper {
+                grid-template-columns: repeat(3, 220px);
+                gap: 2rem;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .nav {
+        position: relative;
+        transition: .5s;
+        overflow: visible;
+        display: flex;
+
+        // justify-content: center;
+        .nav-icons {
+            display: block;
+            margin-right: 1rem;
+        }
+
+
+
+        .cross {
+            z-index: 99;
+            font-size: 2rem;
+        }
+
+        .mobile-menu {
+
+            display: block;
+            background-color: $color-primary-nav;
+            width: 110vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            // left: 0;
+            // right: rem;
+            z-index: 9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transform: translateX(-5rem);
+
+            li {
+                margin: 1rem 0;
+                font-size: 2rem;
+            }
+        }
+
+
+    }
+
+    .main-menu {
+        display: none;
+
+        li:not(:last-child)::after {
+            content: "";
+        }
+    }
+
+
+    .hero {
+        // height: fit-content;
+
+        .hero-contain {
+            // flex-direction: column;
+
+            .left {
+                width: 50%;
+                // order: 2;
+                max-width: 100%;
+                margin-top: 5rem;
+
+                h1 {
+                    font-size: 3.4rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+
+            .right {
+                .img {
+                    img {
+                        height: 35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // CategoryList
+    .categoryList {
+        .container {
+
+            // width: 98vw;
+            .categoryBoxWrapper {
+                grid-template-columns: repeat(3, 33%);
+                gap: 1rem;
+            }
+        }
+    }
+
+    // Quiz Section:
+    .quizBody {
+        grid-template-columns: 1fr 3fr;
+
+        .quizContaintBody {
+            margin-right: 2rem;
+        }
+
+        .rightSideBar {
+            display: none;
+        }
+    }
+
+    .footer-menu {
+
+        // flex-direction: column;
+        li::after {
+            content: "\00a0 \00a0 \00a0";
+        }
+
+        flex-wrap: wrap;
+    }
+
+    footer {
+        .bottom-footer {
+            padding: 2rem 1rem;
+
+            .copyright {
+                display: block;
+
+                .footer-menu {
+                    // flex-direction: column;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .categoryList {
+        .container {
+            .categoryBoxWrapper {
+                grid-template-columns: repeat(2, 50%);
+                gap: .5rem;
+            }
+        }
+    }
+
+    .hero {
+        // height: fit-content;
+
+        .hero-contain {
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                order: 2;
+                max-width: 100%;
+                margin-top: 5rem;
+
+                h1 {
+                    font-size: 3.4rem;
+                }
+
+                h3 {
+                    font-size: 2rem;
+                }
+            }
+
+            .right {
+                .img {
+                    img {
+                        height: 35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // Quiz Section:
+    .quizBody {
+        gap: 0;
+        grid-template-columns: 3fr 1fr;
+        .leftSideBar {
+            order: 2;
+            display: none;            
+        }
+        .mobileLeftSideBar {
+            display: block;
+        }
+        .quizContaintBody{
+            order: 1;
+            grid-column: 1 / -1;
+        }
+        .quizContaintBody {
+            margin: 1rem;
+            order: 1;
+            .quiz_heading {
+                .quiz-nav-icons {
+                    color: $color-black;
+                    margin-right: 3rem;
+                    display: block;
+                }
+            }
+        }
+    }
+    .mobile-quiz-Body {
+        .leftSideBar, .quizContaintBody{
+            grid-row: 1/2;            
+        }
+        .leftSideBar {
+            grid-column: 1 / 2;
+            display: block;
+            padding-top: 5rem;
+        }
+        .quizContaintBody{
+            order: 1;
+            grid-column: 1 / -1;
+        }       
+    }
+
+
+}
+
+@media screen and (max-width: 380px) {
+    .nav-icons {
+        color: $color-white;
+    }
+
+    .nav {
+        height: 5rem;
+
+        .logo {
+            img {
+                height: 2rem;
+            }
+
+            span {
+                font-size: 2rem;
+            }
+        }
+
+        .nav-right-icons {
+
+            .mobile-search-icon,
+            .mobileSignInBtn {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    .float-search {
+        display: flex;
+        position: relative;
+
+        .input-search {
+            width: 100%;
+            display: flex;
+
+            input[type="text"] {
+                height: 3rem;
+            }
+
+            .search-icon {
+                height: 3rem;
+                width: 3rem;
+                font-size: 1.6rem;
+                transform: translateX(-15px);
+            }
+        }
+
+    }
+
+    .hero {
+        .hero-contain {
+            .left {
+                .links {
+                    flex-direction: column;
+                    margin: 0;
+                    margin-bottom: 3rem;
+
+                    button {
+                        margin: 4rem 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .categoryList {
+        .container {
+            .categoryBoxWrapper {
+                grid-template-columns: repeat(1, 100%);
+            }
+        }
+    }
+
+}

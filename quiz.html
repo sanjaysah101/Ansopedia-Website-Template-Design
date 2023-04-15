@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css">
+    <link href=' http://fonts.googleapis.com/css?family=Inter' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+    <!-- Header Section Start -->
+    <header>
+        <nav class="primary-nav">
+            <div class="container">
+                <div class="nav">
+                    <div class="hamburger nav-icons">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+                    <div class="cross nav-icons">
+                        <i class="fa-sharp fa-solid fa-xmark"></i>
+                    </div>
+
+                    <div class="logo">
+                        <img src="assets/img/Ansopedia logo.png" alt="">
+                        <span>nsopedia</span>
+                    </div>
+
+                    <ul class="main-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="category.html">Category</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FaQ</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                    <div class="right-nav">
+                        <div class="nav-search">
+                            <form class="input-search" method="get">
+                                <label for="search"></label>
+                                <input type="text" name="search" class="searchbar" id="search">
+                                <!-- <button class="--btn search-icon"></button> -->
+                                <button type="submit" class="--btn search-icon" title="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </form>
+                        </div>
+
+                        <!-- <div class="auth">
+                    </div> -->
+                        <div class="nav-right-icons">
+                            <i class="fa-solid fa-magnifying-glass mobile-search-icon"></i>
+                            <i class="fa-solid fa-user mobileSignInBtn"></i>
+                            <button class="--btn --btn-primary signInBtn auth">Sign In</button>
+                            <!-- <button class=" mobile-search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class=" mobileSignInBtn"><i class="fa-solid fa-user"></i></button> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="float-search">
+                    <form class="input-search" method="get">
+                        <input type="text" name="search" class="searchbar">
+                        <button class="--btn search-icon"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- Secondary Nav Start-->
+        <nav class="secondar-nav">
+            <div class="container">
+                <ul class="footer-menu">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="category.html">Category</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FaQ</a></li>
+                    <li><a href="quiz.html">Quiz</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Secondary Nav End-->
+        <!-- Hero Section Start -->
+        <div class="hero hero-quiz">
+            <!-- <div class="container"> -->
+            <div class="hero-contain container">
+                <div class="left">
+                    <h1>Computer engineering</h1>
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo fugit consequatur voluptatum
+                        voluptas, maiores!</h3>
+                    <div class="links">
+                        <button class="--btn --btn-primary" id="get-start">Take a Quize</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="img">
+                        <img src="assets/icons/contant_photo.svg" alt="">
+                    </div>
+                </div>
+                <!-- </div> -->
+            </div>
+        </div>
+        <!-- Hero Section End -->
+    </header>
+    <!-- Header Section End -->
+
+    <div class="quizContainer">
+
+    </div>
+    <section class="quizBody">
+        <aside class="leftSideBar mobile-quiz-Content-Left-Sidebar " id="quizContentLeftSidebar">
+            <div class="sidebarContent">
+                <ul>
+                    <li onclick="navShow()" class="sidemenu">
+                        <a href="#" class="sideMenuTitle">Introduction
+                            <span id="iconArr" class="iconArr">&#x25BC;</span>
+                        </a>
+                        <div class="sub_menu" id="subMenu">
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Versions</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables Data Types Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Data Types</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Operators</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Branching</a></li>
+                    <li class="sidemenu"><a href="#" class="sideMenuTitle">Variables</a></li>
+                </ul>
+            </div>
+        </aside>
+        <main class="quizContaintBody">
+            <div class="quiz_heading">
+                <div class="quiz-nav-icons" id="hamburgerQuizHeader">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                
+                <div class="quiz-nav-icons" id="crossQuizHeader">
+                    <i class="fa-sharp fa-solid fa-xmark"></i>
+                </div>
+                <span id="chName">JAVA Programming ( Chapter 1 )</span>
+            </div>
+            <div class="quizQuestion">
+                <div>
+                    <p class="question-title">This is question ?</p>
+                    <ol>
+                        <li>Option 1</li>
+                        <li>Option 2</li>
+                        <li>Option 3</li>
+                        <li>Option 4</li>
+                    </ol>
+                </div>
+                <div class="quiz-links">
+                    <span onclick="openDesc()" id="showAns">Show Answer</span>
+                    <span  onclick="closeDesc()" id="hideAns" style="display: none; color: #FF5E34;">Hide
+                        Answer</span>
+                    <span href="#commentsSection">Discussion</span>
+                    <span onclick="openReport()">Report</span>
+                </div>
+                <div class="desc" id="desc">
+                    <h4>Answer</h4>
+                    <p>Corrcet Answer is <b>Option 2</b></p><br>
+                    <h4>Description</h4>
+                    <p>This is the Description of the question. This is the Description of the question. This is the
+                        Description of the question. This is the Description of the question. This is the Description of
+                        the
+                        question. This is the Description of the question. </p>
+                </div>
+            </div>
+           
+        </main>
+        <aside class="rightSideBar">
+            <div class="advertisementSidebar">
+                <img src="./assets/img/banner.png" alt="Ad">
+            </div>
+
+        </aside>
+    </section>
+
+
+
+    <div class="lorem">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aspernatur voluptas itaque quidem perspiciatis fugit
+        magni fugiat repellendus alias fuga? Sed cum earum deserunt vel assumenda cumque laborum quos voluptatibus
+        architecto. Quas ratione fugiat doloribus sit odio deserunt officiis eveniet, deleniti, eius magnam minus? Sint
+        Explicabo adipisci ipsa ea.
+    </div>
+
+
+
+
+    <!-- Footer Section Start -->
+    <footer>
+        <div class="bottom-footer">
+            <div class="container">
+                <div class="copyright">
+                    <p>Copyright &copy;<span id="copyrightYear"></span> | All Rights Reserved </p>
+                    <ul class="footer-menu">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">FaQ</a></li>
+                        <li><a href="quiz.html">Quiz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End -->
+
+
+    <script src="js/script.js"></script>
+    <script src="js/quiz.js"></script>
+</body>
+
+</html>

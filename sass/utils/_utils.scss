@@ -1,0 +1,29 @@
+@mixin flex($ai, $jc) {
+    display: flex;
+    overflow: hidden;
+    align-items: $ai;
+    justify-content: $jc;
+}
+
+.container {
+    max-width: 1400px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hide {
+    display: none !important;
+}
+
+.active {
+    color: $color-primary !important;
+    text-decoration: underline !important;
+}
+
+.mobileSignInBtn {
+    display: none;
+}
+
+.float-search {
+    display: none;
+}
